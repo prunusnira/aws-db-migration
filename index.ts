@@ -2,15 +2,6 @@ import MariaLoader from "./marialoader";
 import DynamoWriter from "./dynamowriter";
 import express from 'express';
 
-exports.handler = async (event: Event) => {
-    // TODO implement
-    const response = {
-        statusCode: 200,
-        body: JSON.stringify('Hello from Lambda!'),
-    };
-    return response;
-};
-
 const app = express();
 app.listen(8080, () => {
 
